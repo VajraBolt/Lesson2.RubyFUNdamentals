@@ -31,12 +31,18 @@ Numbers, strings, booleans, arrays, hashes, symbols, constants, classes.
 
 Ruby is a dynamically typed language. Ruby figures out what type of data we re workng with (We dont have to define "this will be a string" or "this will be a number")
 
+Rubydocs are the bible. ruby-doc.org
+
 ##Numbers - there are dif kinds
 	Integers: FixNum, Bignum
-	Float
+	Float - have decimals. good for arithmetic that requires precision
+		ex 1/3 = 0. 1.0/3=.33333333
+		*warning: floats are not that precise, and are actually wrong. Dont use for money.
+	
 
 	Intergers are whole numbers, can be positive or negative.
 
 	(Introspection - able to look at aspects of langauge and learn more aboutit. ruby is introspective.)
 
 	(Can find info on it by doing X.class)
+
