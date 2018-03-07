@@ -27,7 +27,7 @@ Data types are the building blocks of ruby.
 
 All data types are objects.
 
-Numbers, strings, booleans, arrays, hashes, symbols, constants, classes.
+Numbers (numbers), strings (words etc), booleans (true or false), arrays, hashes, symbols, constants, classes.
 
 Ruby is a dynamically typed language. Ruby figures out what type of data we re workng with (We dont have to define "this will be a string" or "this will be a number")
 
@@ -38,11 +38,71 @@ Rubydocs are the bible. ruby-doc.org
 	Float - have decimals. good for arithmetic that requires precision
 		ex 1/3 = 0. 1.0/3=.33333333
 		*warning: floats are not that precise, and are actually wrong. Dont use for money.
-	
+		*Multiply integers then multiply/divide in order to resolve float issues.
+
 
 	Intergers are whole numbers, can be positive or negative.
+
+##Operators
+	Multiply, divide, Modulo, add, subtract
+
+##Comparison Operators
+	== - checks if two are equal or not
+
+	!= - opposite of ==. ! is called bang
+
+	> greater than
+
+	< less than
+
+	etc.
+
+	Any val in ruby except nil will eval to true.
+
+
+
+
 
 	(Introspection - able to look at aspects of langauge and learn more aboutit. ruby is introspective.)
 
 	(Can find info on it by doing X.class)
+
+#SYMBOL - used for hash keys. Every time you create a string it reserves a space for the stri ng and stores it. Even if you use the same string twice.
+
+object_id is another introspection method
+
+Symbols are like pared down string. You want the object, but you are not planning on calling special methods on it. Cant concat symbols or antrhing else lke that. 	
+
+Once you define a sumbol, it is the same object in  memory forever.
+
+#CONSTANT -value that stays the same. After you give it a value once, it cannot change. Constants have to start w a capital letter, but developers give them ALLCAPS names
+
+#CONVERSION
+there are conversion methods. Such as:
+
+"string".to_sym = :string
+1.2.to_i = 1
+1.to_f = 1.0
+there is no to_boolean but we can do
+!!1 = true - not common but can be used.
+
+#Variables and var assignment
+my_class = "Bitmaker DIY home class!"
+
+$ Does not declare a variable, it is a type of variable. Involves Scope.
+
+Variables in ruby can be composed of letters, numbers and underscores. usually, there are no caps given in ruby vars. Its a convention thing. ruby_classes_are_done_in_snake_case and they never start with numbers
+
+when you assign a variable to a variable, you are really just passing the value. It is called pass by value;
+
+you can assign multiple things at once. first, second, third = 10, 20, 30
+
+
+###Shorthands
+
++= adds and assigns value
+
+-=
+
+||= sets default value
 
