@@ -1,0 +1,42 @@
+#Ruby fundamentals 1
+*High Level
+*written in C
+*Interpereted (vs compiled)
+*Object Oriented
+
+Everything in ruby is an object
+BML uses 2.2.1, I am on 2.3.1 - noted.
+
+In Sublime text, ctrl + p to quick open by file name
+
+How to run Ruby programs -
+
+ruby rbfilename.
+
+also can use irb
+
+Irb is a repl.
+
+Repl is a read-eval-print loop. It is good for texting.
+
+Pry is another repl. A lot of bitmaker instructors love pry.
+
+repls are common to programming languages. They are good to use as a playground and experiment.
+
+Data types are the building blocks of ruby.
+
+All data types are objects.
+
+Numbers, strings, booleans, arrays, hashes, symbols, constants, classes.
+
+Ruby is a dynamically typed language. Ruby figures out what type of data we re workng with (We dont have to define "this will be a string" or "this will be a number")
+
+##Numbers - there are dif kinds
+	Integers: FixNum, Bignum
+	Float
+
+	Intergers are whole numbers, can be positive or negative.
+
+	(Introspection - able to look at aspects of langauge and learn more aboutit. ruby is introspective.)
+
+	(Can find info on it by doing X.class)
